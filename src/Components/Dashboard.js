@@ -7,9 +7,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import LogoutIcon from '@mui/icons-material/Logout'
 import Tooltip from '@mui/material/Tooltip';
 
-
-
-function Dashboard() {
+function Dashboard () {
 
   return (
       <Box sx=''>
@@ -18,7 +16,7 @@ function Dashboard() {
            <nav className='container'>
             <Header>
                <Typography>
-                Dashboard
+                Orphanage Management system
                </Typography>
                <Tooltip title='logout'>
                <Button>
