@@ -17,18 +17,20 @@ import Expenses from '../pages/Receipt/Expenses';
 import ViewExpenses from '../pages/Receipt/ViewExpenses'
 import AddUser from '../pages/Users/AddUser';
 import ViewUser from '../pages/Users/ViewUser';
+import Login from "../pages/Login";
+import Signup from "../pages/Signup";
 
 
 const routes = createBrowserRouter([
   {
-    path: "/",
-    element: <Sidebar />,
-    children: [
+     path: "/",
+     element: <Sidebar />,
+      children: [
       {
         path: "/dashboard",
         element: <Dashboard />,
       },
-     
+
       {
         path:"/adduser",
         element:< AddUser/>
@@ -102,11 +104,19 @@ const routes = createBrowserRouter([
       {
         path: "/viewexpenses",
         element: <ViewExpenses/>
+      }, 
+      {
+        path: "/login",
+        element: <Login />
+      }, 
+      {
+        path: "/signup",
+        element:<Signup />
       }
 
     ],
 
-    errorElement: <p> The page you requested was not found </p>,
+        errorElement: <p> The page you requested was not found </p>,
   },
 ]);
 

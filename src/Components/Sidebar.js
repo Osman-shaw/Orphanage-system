@@ -24,13 +24,6 @@ import  AddIcon from "@mui/icons-material/Add";
 
 
 
-
-
-
-
-
-
-// import ChevronLeft from "@mui/icons-material/ChevronLeft";
 import { Link, Outlet, useNavigate } from "react-router-dom";
 
 const drawerWidth = 240;
@@ -88,7 +81,7 @@ return openedMenus.indexOf(itemIndex) !== -1
        children: [
         {
           label: "Orphan",
-          icon:<AddIcon/>,
+          icon: <AddIcon/>,
           path: "/addorphan",
       
         },
@@ -100,7 +93,7 @@ return openedMenus.indexOf(itemIndex) !== -1
        children: [
         {
           label: "Donor",
-          path: "/adddonor",
+          path:  "/adddonor",
           icon:<AddIcon/>,
         },
       ],
@@ -152,14 +145,8 @@ return openedMenus.indexOf(itemIndex) !== -1
     {
       label: "Receipt",
       icon:<ReceiptOutlinedIcon/>,
-    path:"/receipts", 
-    // children: [
-    //   {
-    //     label: "expenses",
-    //     path: "/expenses",
-    //     icon:<AddIcon/>,
-    //   },
-    // ],
+       path:"/receipts", 
+    
 
     },
   ];
@@ -209,7 +196,7 @@ return openedMenus.indexOf(itemIndex) !== -1
                         item.children &&
                           item.children.map((child, _index) => {
                             return (
-                              <Link to={child.path} key={_index}>
+                              <Link to={child.path} key={_index} style={{textDecoration:"none"}}>
                                 <ListItem>
                                    <ListItemButton>
                                      <ListItemIcon primary={child.icon}>
@@ -223,7 +210,6 @@ return openedMenus.indexOf(itemIndex) !== -1
                 </>
               );
             })}
-
           </List>
         </Drawer>
         <Outlet />
