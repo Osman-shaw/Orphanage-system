@@ -443,3 +443,40 @@
 // }
 
 // export default Sidebar;
+
+
+
+ 
+
+ 
+
+ 
+
+//   const handleLogout = () => {
+//     // Add your logout logic here
+//     handleMenuClose();
+//   };
+
+ 
+/* <CssBaseline/>
+<div className={Header}>
+  <nav className='container'>
+   <Header>
+      <Typography>
+       Orphanage Management system
+      </Typography>
+      <Tooltip title='logout'>
+      <Button>
+      <LogoutIcon/>
+     </Button>
+    </Tooltip>
+   </Header>
+   </nav>
+//   </div> */
+   
+  
+// const Header = styled.div`
+//    display:flex;
+//    align-items: center;
+//    justify-content:space-around;
+//    padding-top:40px;

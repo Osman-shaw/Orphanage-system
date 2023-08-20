@@ -23,12 +23,21 @@ import Signup from "../pages/Signup";
 
 const routes = createBrowserRouter([
   {
-     path: "/",
-     element: <Sidebar />,
+      
+      path: "/ sidebar",
+      element: <Sidebar />,
       children: [
+
+     {
+
+      path:"/",
+      element: <Login />,
+       
+     },
+
       {
-        path: "/dashboard",
-        element: <Dashboard />,
+        path: "/ dashboard",
+        element:<Dashboard />,
       },
 
       {
@@ -105,10 +114,7 @@ const routes = createBrowserRouter([
         path: "/viewexpenses",
         element: <ViewExpenses/>
       }, 
-      {
-        path: "/login",
-        element: <Login />
-      }, 
+
       {
         path: "/signup",
         element:<Signup />

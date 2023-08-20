@@ -1,12 +1,10 @@
 import React  from "react";
 import "./App.css";
 import{
-  Routes,
-  Route,
   RouterProvider,
 } from "react-router-dom"; 
-import Login from "./pages/Login"
-import  Signup from "./pages/Signup"
+// import Login from "./pages/Login"
+// import  Signup from "./pages/Signup"
 
  import routes from "./routes";
 
@@ -15,7 +13,7 @@ import  Signup from "./pages/Signup"
 function App() {
   return (
     <>
-      <RouterProvider router={routes} />
+      <RouterProvider router= {routes} />
       </>
   );
 }

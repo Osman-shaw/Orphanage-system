@@ -18,10 +18,9 @@ import CreditScoreOutlinedIcon from "@mui/icons-material/CreditScoreOutlined";
 import SourceOutlinedIcon from "@mui/icons-material/SourceOutlined";
 import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import ReceiptOutlinedIcon from "@mui/icons-material/ReceiptOutlined";
-import  AddIcon from "@mui/icons-material/Add";
-// import PreviewIcon from "@mui/icons-material/Preview";
-// import ChevronRight from "@mui/icons-material/ChevronRi
-
+// import  AddIcon from "@mui/icons-material/Add";
+import Dashboard from "../Components/Dashboard";
+import Navbar from "../Components/Navbar"
 
 
 import { Link, Outlet, useNavigate } from "react-router-dom";
@@ -70,7 +69,7 @@ return openedMenus.indexOf(itemIndex) !== -1
         {
           label: "user",
           path: "/adduser",
-          icon:<AddIcon/>,
+          // icon:<AddIcon/>,
         },
       ],
     },
@@ -81,7 +80,7 @@ return openedMenus.indexOf(itemIndex) !== -1
        children: [
         {
           label: "Orphan",
-          icon: <AddIcon/>,
+          // icon: <AddIcon/>,
           path: "/addorphan",
       
         },
@@ -94,7 +93,7 @@ return openedMenus.indexOf(itemIndex) !== -1
         {
           label: "Donor",
           path:  "/adddonor",
-          icon:<AddIcon/>,
+          // icon:<AddIcon/>,
         },
       ],
     },
@@ -105,7 +104,7 @@ return openedMenus.indexOf(itemIndex) !== -1
         {
           label: "Sponsor",
           path: "/sponsor",
-          icon:<AddIcon/>,
+          // icon:<AddIcon/>,
         },
       ],
     },
@@ -116,7 +115,7 @@ return openedMenus.indexOf(itemIndex) !== -1
         {
           label: "giftsent",
           path: "/addgiftsent",
-          icon:<AddIcon/>,
+          // icon:<AddIcon/>,
         },
       ],
     },
@@ -127,7 +126,7 @@ return openedMenus.indexOf(itemIndex) !== -1
         {
           label: "feedback",
           path: "/addfeedback",
-          icon:<AddIcon/>,
+          // icon:<AddIcon/>,
         },
       ],
     },
@@ -138,7 +137,7 @@ return openedMenus.indexOf(itemIndex) !== -1
         {
           label: "fund",
           path: "/fundraising",
-          icon:<AddIcon/>,
+          // icon:<AddIcon/>,
         },
       ],
     },
@@ -155,7 +154,7 @@ return openedMenus.indexOf(itemIndex) !== -1
     <div>
       <Box>
         <CssBaseline />
-        <Drawer
+         <Drawer
           sx={{
             width: drawerWidth,
             flexShrink: 0,
@@ -213,8 +212,12 @@ return openedMenus.indexOf(itemIndex) !== -1
           </List>
         </Drawer>
         <Outlet />
-      </Box>
+       </Box>
+       <Navbar/>
+       <Dashboard/>
+      
     </div>
+    
   );
 }
 
